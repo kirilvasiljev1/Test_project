@@ -7,9 +7,9 @@ class Item(ABC):
         self.author = author
         self.name = name
         self.__is_checked_out = False
-
+        
     def get_status(self):
-        return self.__is_checked_out
+        print(self.__is_checked_out)
     
     def set_status(self, __is_checked_out):
         self.__is_checked_out = __is_checked_out
