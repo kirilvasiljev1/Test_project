@@ -8,10 +8,10 @@ class Item(ABC):
         self.name = name
         self.__is_checked_out = False
 
-    def get_age(self):
+    def get_status(self):
         return self.__is_checked_out
     
-    def set_age(self, __is_checked_out):
+    def set_status(self, __is_checked_out):
         self.__is_checked_out = __is_checked_out
 
     @abstractmethod
