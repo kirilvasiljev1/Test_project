@@ -22,8 +22,8 @@ def main():
       print("Programa leidžia atlikti sekančius veiksmus:")
       print("[1] - peržiūrėti visą sąrašą:")
       print("[2] - pasiskolinti knygą ar žurnalą")
-      print("[3] - grąžinti knyga ar žurnalą")
-      print("[4] - baigti progama")
+      print("[3] - grąžinti knygą ar žurnalą")
+      print("[4] - baigti progamą")
       selection = int(input("Įveskite jūsų pasirinkimą: "))
       if selection in range(1,5):
          if selection == 1:
