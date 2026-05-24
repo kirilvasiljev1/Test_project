@@ -8,4 +8,4 @@ class Book(Item):
         self.genre = genre
     
     def get_details(self):
-        print (f"Book(Title: {self.title}, Author: {self.author}, Name: {self.name}, Genre: {self.genre})")
+        return f"Book(Title: {self.title}, Author: {self.author}, Name: {self.name}, Genre: {self.genre})"

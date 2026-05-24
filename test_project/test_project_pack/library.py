@@ -4,32 +4,22 @@ from test_project_pack.item import Item
 from test_project_pack.book import Book
 from test_project_pack.magazine import Magazine
 
-class Library:
+class Library():
 
-    list_of_items = {}
+    list_of_items = []
 
-    def add_item(self,item):
-         self.take = Item()
-         self.list_of_items[item] = self.take.set_status(True)
+    def add_item(self, entry):
+        self.list_of_items.append(entry)
 
     def list_all(self):
         for i in self.list_of_items:
-            i.get_details(), print(self.list_of_items[i])
+            print(i.get_details(), i.is_checked_out)
 
-            #if isinstance(i, Book):
-            #    i.get_details()
-            #if isinstance(i, Magazine):
-            #    i.get_details()
-    
-             
-            
-
-    
-    
-    def borrow_item(item):
-        Item.set_status(True)
-    
-    def return_item(item):
-        Item.set_status(False)
-        
+    def borrow_item(self, entry):
+        for item in self.list_of_items:
+            if item == entry and item.is_checked_out == False:
+               item.is_checked_out = True
+            elif item == entry and item.is_checked_out == True:
+                print("Sorry item: ", item.get_details(), " is already borrowed")
+                
     

@@ -9,4 +9,4 @@ class Magazine(Item):
     
 
     def get_details(self):
-        print (f"Magazine(Title: {self.title}, Author: {self.author}, Name: {self.name}, Issue_number: {self.issue_number})")
+        return f"Magazine(Title: {self.title}, Author: {self.author}, Name: {self.name}, Issue_number: {self.issue_number})"

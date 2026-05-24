@@ -12,12 +12,14 @@ magazine_1 = Magazine("Modo","Any Author", "Aliens", "2026.12.12")
 magazine_2 = Magazine("Modo2","Any Author2", "Aliens2", "2026.11.11")
 
 def main():
-    library_1.add_item(book_1)
-    library_1.add_item(magazine_1)
-    library_1.add_item(book_2)
-    library_1.add_item(magazine_2)
-    library_1.list_all()
-    
+   library_1.add_item(book_1)
+   library_1.add_item(magazine_1)
+   library_1.add_item(book_2)
+   library_1.add_item(magazine_2)
+   library_1.list_all()
+   library_1.borrow_item(book_1)
+   library_1.list_all()
+   library_1.borrow_item(book_1)
 
 
 
