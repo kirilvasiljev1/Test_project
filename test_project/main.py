@@ -8,6 +8,7 @@ from test_project_pack import Library
 library_1 = Library()
 book_1 = Book("Title 1", "Author 1", "Name 1", "Fantasy 1")
 book_2 = Book("Title 2", "Author 2", "Name 2", "Fantasy 2")
+book_3 = Book("Kaip mums sekasi", "Nezinomas autorius", "Zmogaus siela", "Medicinos israsai")
 
 magazine_1 = Magazine("Modo","Any Author", "Aliens", "2026.12.12")
 magazine_2 = Magazine("Modo2","Any Author2", "Aliens2", "2026.11.11")
