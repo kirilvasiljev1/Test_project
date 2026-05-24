@@ -25,7 +25,10 @@ def main():
       print("[2] - pasiskolinti knygą ar žurnalą")
       print("[3] - grąžinti knygą ar žurnalą")
       print("[4] - baigti progamą")
-      selection = int(input("Įveskite jūsų pasirinkimą: "))
+      try:
+         selection = int(input("Įveskite jūsų pasirinkimą: "))
+      except ValueError:
+         print("\033[93m nebuvo įvestas skaičius!!! \033[0m")
       if selection in range(1,5):
          if selection == 1:
             library_1.list_all()
