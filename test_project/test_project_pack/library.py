@@ -17,9 +17,14 @@ class Library():
 
     def borrow_item(self, entry):
         for item in self.list_of_items:
-            if item == entry and item.is_checked_out == False:
+            if item.get_details() == entry.get_details() and item.is_checked_out == False:
                item.is_checked_out = True
-            elif item == entry and item.is_checked_out == True:
-                print("Sorry item: ", item.get_details(), " is already borrowed")
+            elif item.get_details() == entry.get_details() and item.is_checked_out == True:
+                print("Sorry item: \n", item.get_details(), "\n is already borrowed \n")
                 
-    
+    def return_item(self, entry):
+        for item in self.list_of_items:
+            if item.get_details() == entry.get_details() and item.is_checked_out == True:
+               item.is_checked_out = False
+            elif item.get_details() == entry.get_details() and item.is_checked_out == False:
+                print("Sorry item: ", item.get_details(), " is already has been returned")
