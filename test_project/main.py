@@ -4,6 +4,7 @@ from test_project_pack import Book
 from test_project_pack import Magazine
 from test_project_pack import Library
 
+
 library_1 = Library()
 book_1 = Book("Title 1", "Author 1", "Name 1", "Fantasy 1")
 book_2 = Book("Title 2", "Author 2", "Name 2", "Fantasy 2")

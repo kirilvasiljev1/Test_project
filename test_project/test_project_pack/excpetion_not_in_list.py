@@ -1,3 +1,0 @@
-class ItemNotFoundError(Exception): ...
-
-raise ItemNotFoundError("There is no such item in the list")
